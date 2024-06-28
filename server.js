@@ -3,7 +3,7 @@
 // const mongoose=require('mongoose');
 
 // const app= express();
-// const port = 3001;
+// const port = 5000;
 
 // //middleware
 // app.use(express.json());
@@ -60,7 +60,7 @@
 // app.use("/userapi", userRoute);
 // app.use("/appoinment",appoinmentRoute);
 // // PORT
-// const port = process.env.PORT || 3001;
+// const port = process.env.PORT || 5000;
 // app.listen(port, () => {
 //   console.log("PORT Connected on: " + port);
 // });
@@ -86,7 +86,7 @@ const nodemailer = require("nodemailer");
 
 // Connecting MongoDB
 async function mongoDbConnection() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/doctocare", { 
+  await mongoose.connect("mongodb+srv://hemanthvijay02:cwfTAGYKspUxWQux@cluster0.c2rdrz9.mongodb.net/doctocare", { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -168,7 +168,7 @@ app.post("/send-email", (req, res) => {
 });
 
 // PORT
-const port = process.env.PORT || 3001;
+const port = 5000;
 app.listen(port, () => {
   console.log("Server listening on port: " + port);
 });
