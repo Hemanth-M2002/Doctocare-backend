@@ -1,4 +1,3 @@
-module.exports={
-    EMAIL :'doctocare7@gmail.com',
-    PASSWORD :'txgqylxonjcdzjjo'
-}
+
+    EMAIL ='doctocare7@gmail.com'
+    PASSWORD ='txgqylxonjcdzjjo'
